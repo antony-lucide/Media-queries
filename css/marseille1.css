@@ -1,0 +1,65 @@
+#rando {
+    justify-content: space-around;
+}
+
+#rando article{
+    width: clamp(300px, 30%, 600px);
+    margin: 1%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.7);
+}
+
+article p, article h3, ul {
+    padding: 2%; 
+    list-style: none;
+}
+
+#rando article img {
+    width: 100%;
+}
+
+body{
+    background-image: url("../images/Randonnée/cool-background.png");
+    background-attachment: fixed;
+    background-size: cover;
+}
+.contribution{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 10px;
+    margin: 2% auto;
+    width: 60%;
+    border: 1px solid  rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.7);
+}
+
+
+
+@media  screen and (min-width:100px) and (max-width:600px){
+    .contribution{
+     width: clamp(300px, 30%, 600px);
+    }
+}
+/* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
+
+@media screen  and (max-width:801px)  { 
+    section{
+      display: flex;
+      flex-direction: column;
+    }
+}
+/* tablet, landscape iPad, lo-res laptops ands desktops */ 
+@media screen and (max-width:1281px) { 
+    section img{
+        height: fit-content;
+        width: fit-content;
+    }
+}
+
+/* hi-res laptops and desktops */ 
+
